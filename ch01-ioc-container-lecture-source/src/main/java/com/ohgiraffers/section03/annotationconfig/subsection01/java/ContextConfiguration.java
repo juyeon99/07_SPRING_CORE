@@ -26,7 +26,7 @@ import org.springframework.context.annotation.FilterType;
 
 // 3.
 @ComponentScan(basePackages = "com.ohgiraffers",
-        // 기본 어노테이션 (@Component, @Service, @Repository, @Controller)를 가진 클래스들이 자동으로 스캔된다. (기본값)
+        // 기본 어노테이션 (@Component, @Service, @Repository, @Controller)을 가진 클래스들이 자동으로 스캔된다. (기본값)
         useDefaultFilters = false,
         includeFilters = {
                 // includeFilters: 기본필터 이외에 추가로 포함시키고 싶은 클래스를 스캔할 수 있다.
@@ -36,7 +36,7 @@ import org.springframework.context.annotation.FilterType;
                 )
         }
 )
-@Configuration("contextConfig")  // bean 이름 지정하려면: @Configuration("contextConfig3")
+@Configuration("contextConfig")  // bean 이름 지정: @Configuration("contextConfig")
 public class ContextConfiguration {
 
 }

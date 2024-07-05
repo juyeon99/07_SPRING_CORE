@@ -9,7 +9,13 @@ import org.springframework.context.annotation.Configuration;
 public class ContextConfiguration {
     @Bean("member")
     public MemberDTO memberGenerator(){
-        return new MemberDTO(2L, "nickname2");
+//        return new MemberDTO(2L, "nickname2");
+
+        MemberDTO member = new MemberDTO();
+        member.setId(2L);
+        member.setNickname("nickname2");
+
+        return member;
     }
 
     @Bean("board")

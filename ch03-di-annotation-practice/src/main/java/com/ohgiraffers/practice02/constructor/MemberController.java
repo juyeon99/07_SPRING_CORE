@@ -15,7 +15,6 @@ public class MemberController {
         this.memberService = memberService;
     }
 
-    @Autowired
     public Map<Long, MemberDTO> selectMember() {
         return memberService.selectMember();
     }

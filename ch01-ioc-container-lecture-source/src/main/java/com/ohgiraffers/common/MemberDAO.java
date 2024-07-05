@@ -12,7 +12,7 @@ import java.util.Map;
 * */
 @Component
 public class MemberDAO {
-    private final Map<Integer, MemberDTO> memberMap;    // 상수:
+    private final Map<Integer, MemberDTO> memberMap;
 
     // 의존성 주입
     public MemberDAO(){

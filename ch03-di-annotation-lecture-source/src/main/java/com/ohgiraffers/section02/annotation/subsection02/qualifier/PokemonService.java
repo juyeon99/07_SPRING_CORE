@@ -17,8 +17,7 @@ public class PokemonService {
 //    @Autowired
 //    private Pokemon pokemon;
 //
-//    @Autowired
-//    public PokemonService(Pokemon pokemon) {    // 3마리 중 어떤 포켓몬을 넣을지 primary로 우선순위 설정 해주어야 함
+//    public PokemonService(Pokemon pokemon) {
 //        this.pokemon = pokemon;
 //    }
 
@@ -26,7 +25,7 @@ public class PokemonService {
     private Pokemon pokemon;
 
     @Autowired
-    public PokemonService(@Qualifier("squirtle" /* = Squirtle */) Pokemon pokemon) {    // 3마리 중 어떤 포켓몬을 넣을지 primary로 우선순위 설정 해주어야 함
+    public PokemonService(@Qualifier("squirtle" /* = Squirtle */) Pokemon pokemon) {
         this.pokemon = pokemon;
     }
 
